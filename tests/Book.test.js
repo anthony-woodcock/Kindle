@@ -1,5 +1,7 @@
 var Chapter = require('../src/Chapter')
 var path = require('path')
+var Book = require('../src/Book')
+
 
 describe('Book', function(){
 var chapters = []
