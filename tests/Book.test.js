@@ -1,11 +1,20 @@
+var Chapter = require('../src/Chapter')
+var path = require('path')
+
 describe('Book', function(){
-var chapter = []
+var chapters = []
 var book 
 
  beforeEach(function () {
-     for(var i = 0; i < 12 ; i++ ){
-        chapter.push
+     for(var i = 0; i <= 12 ; i++ ){
+        chapters.push(new Chapter(path.join(__dirname, '/fixtures/sampleChapter.txt')))
      }
- }
 
+     book = new Book(chapters)
+ })
+
+    test('has chapters', function(){
+        expect(book.getChapters()).toBe(chapters)
+    })
+   
 })
