@@ -1,9 +1,6 @@
-var fs = require('fs')
-var path = require('path')
 
 function Library(){
     this._books = []
-    
 }
 
 Library.prototype = {
@@ -16,9 +13,6 @@ Library.prototype = {
         this._books.push(book)
         
     }
-
-
-
 }
 
 module.exports = Library

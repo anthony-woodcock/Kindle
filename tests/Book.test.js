@@ -13,7 +13,7 @@ var book
      }
 
      book = new Book('Harry Potter', chapters)
- })
+    })
 
     test('has chapters', function(){
         expect(book.getChapters()).toBe(chapters)
@@ -22,7 +22,5 @@ var book
     test('has a name', function(){
         expect(book.getName()).toBe('Harry Potter')
     })
-
-
-
+    
 })
